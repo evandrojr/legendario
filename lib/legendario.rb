@@ -10,11 +10,28 @@ module Legendario
   $:.unshift lib_dir unless $:.include? lib_dir
 
   class Legendario
-  	@dir = "/home/j/Downloads"
-  	def lang
-  		[]
-  		["eng", "por", "spa", "ger"]
-  #		["eng"]
+
+    if ARGV.size == 0
+      puts 'Error no folder defined. Try legendario.rb "folder-name"  eng por  for example'
+      puts 'default languages are: eng por spa ger '
+      exit 0
+    end
+
+  	@dir = ARGV[0]
+
+  	def self.lang
+      langs = ["eng", "por", "spa", "ger"]
+      if ARGV.size > 1
+        langs = []
+        c = 0
+        ARGV.each do|l|
+          langs << l if c > 0
+          c+=1
+        end
+      end
+      puts "Will look for subtitles on these languages: "
+      puts langs.inspect
+      langs
   	end
 
   	def self.watch
@@ -50,7 +67,7 @@ module Legendario
   					se("rm \"#{path}\"")
   				end
   				symlinked = false
-  				lang().each do |l|
+  				self.lang().each do |l|
   					if /\.#{l}\.srt$/i =~ File.basename(path) and !symlinked
   						puts path
   						link = path.sub(/\.#{l}\.srt$/i, '.srt')
@@ -89,8 +106,12 @@ module Legendario
   			end
   		end
   	end
+
+
+
   end
 
+  Legendario.lang
   Legendario.watch
 
 end

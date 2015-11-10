@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Evandro Junior"]
   spec.email         = ["evandrojr@gmail.com"]
   spec.summary       = %q{Subtitles downloader on demmand.}
-  spec.description   = %q{The script downloads subtitle when a new movie arrives to a specific folder.}
+  spec.description   = %q{The script downloads subtitles when a new movie is put to a defined folder.}
   spec.homepage      = "https://github.com/evandrojr/legendario"
   spec.license       = "MIT"
 
@@ -32,8 +32,8 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "file-monitor"
-  spec.add_development_dependency "osdb"
-  spec.add_development_dependency "awesome_print"
+  spec.add_runtime_dependency "file-monitor"
+  spec.add_runtime_dependency "osdb"
+  spec.add_runtime_dependency "awesome_print"
 
 end

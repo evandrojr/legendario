@@ -8,10 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Legendario::VERSION
   spec.authors       = ["Evandro Junior"]
   spec.email         = ["evandrojr@gmail.com"]
-
   spec.summary       = %q{Subtitles downloader on demmand.}
   spec.description   = %q{The script downloads subtitle when a new movie arrives to a specific folder.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/evandrojr/legendario"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -23,8 +22,12 @@ Gem::Specification.new do |spec|
   end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+#  spec.bindir        = "exe"
+  spec.bindir        = "lib"
+
+
+#  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables   = ["legendario.rb"]
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.10"

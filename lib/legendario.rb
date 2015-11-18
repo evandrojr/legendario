@@ -1,6 +1,5 @@
 # coding: utf-8
 require "legendario/version"
-require 'rubygems'
 require 'file-monitor'
 require 'find'
 
@@ -106,12 +105,5 @@ module Legendario
   			end
   		end
   	end
-
-
-
   end
-
-  Legendario.lang
-  Legendario.watch
-
 end

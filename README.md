@@ -1,5 +1,6 @@
  Legendario
 
+When a movie finishes downloading `Legendario` will search and download its subtitles automatically.
 
 ## Installation
 
@@ -13,7 +14,7 @@ Install it yourself as:
 
 Please, try: 
 
-legendario "folder-name" eng por 
+$ legendario "folder-name" eng por 
 
 for example.
 
@@ -24,9 +25,9 @@ Edit your rc.local file to start legendario after boot
 su (your username) -lc "legendario (folder that will receive downloaded movies) (the languages code with 3 letters can be more tha one)"
 
 Example
-su evandro -lc "legendario /home/j/Downloads por spa"
+`su evandro -lc "legendario /home/j/Downloads por spa"`
 
-exit 0
+
 
 ## Development
 

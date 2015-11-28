@@ -22,7 +22,7 @@ Default languages are: eng por spa ger on this sequence of priority
 
 Edit your rc.local file to start legendario after boot
 
-    su (username) -lc "legendario "folder-where-movies-will-land subs-langs"  
+    su (username) -lc "legendario folder-where-movies-will-land subs-langs"  
 
 Example
 `su evandro -lc "legendario /home/j/Downloads por spa"`

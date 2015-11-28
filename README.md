@@ -25,7 +25,7 @@ Edit your rc.local file to start legendario after boot
     su (username) -lc "legendario folder-where-movies-will-land subs-langs"  
 
 Example
-`su evandro -lc "legendario /home/j/Downloads por spa"`
+`su evandro -lc "legendario /home/evandro/Downloads por spa"`
 
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/evandrojr/legendario. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.

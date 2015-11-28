@@ -1,4 +1,4 @@
- Legendario
+## Legendario
 
 When a movie finishes downloading `Legendario` will search and download its subtitles automatically.
 

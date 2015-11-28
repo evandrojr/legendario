@@ -18,7 +18,7 @@ Please, try:
 
 for example.
 
-Default languages are: eng por spa ger on this sequence of priority
+Default languages are: eng por spa ger on this sequence of priority. [Sub language ISO 639-2](https://www.loc.gov/standards/iso639-2/php/code_list.php) code like fre or eng.
 
 Edit your rc.local file to start legendario after boot
 

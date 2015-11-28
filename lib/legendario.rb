@@ -11,11 +11,11 @@ module Legendario
 
 
   class Legendario
-    @@logger = Logging.logger['log/legendario.log']
+    @@logger = Logging.logger['legendario.log']
     @@logger.level = :debug
     @@logger.add_appenders \
         Logging.appenders.stdout,
-        Logging.appenders.file('log/legendario.log')
+        Logging.appenders.file('legendario.log')
 
     if ARGV.size == 0
       @@logger.error 'A folder must be defined for watching'

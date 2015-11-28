@@ -1,5 +1,7 @@
 # Legendario
 
+[![Gem Version](https://badge.fury.io/rb/legendario.svg)](https://badge.fury.io/rb/legendario)
+
 When a movie finishes downloading `Legendario` will search and download its subtitles automatically.
 
 ## Installation

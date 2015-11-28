@@ -10,11 +10,9 @@ lib_dir = File.join File.dirname(__FILE__), '../lib'
 $:.unshift lib_dir unless $:.include? lib_dir
 
 class Legendario
-	@dir = "/home/j/Downloads"
+	@dir = ""
 	def lang
-		[]
 		["eng", "por", "spa", "ger"]
-#		["eng"]
 	end
 
 	def self.watch

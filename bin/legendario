@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
-require "legendario"
+require_relative "../lib/legendario"
+require_relative "../lib/legendario/version"
 
-Legendario.lang
-Legendario.watch
+Legendario::Legendario.lang
+Legendario::Legendario.watch

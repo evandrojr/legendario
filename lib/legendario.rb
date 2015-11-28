@@ -2,21 +2,36 @@
 require "legendario/version"
 require 'file-monitor'
 require 'find'
+require 'logging'
 
 module Legendario
 
   lib_dir = File.join File.dirname(__FILE__), '../lib'
   $:.unshift lib_dir unless $:.include? lib_dir
 
+
   class Legendario
+    @@logger = Logging.logger['log/legendario.log']
+    @@logger.level = :debug
+    @@logger.add_appenders \
+        Logging.appenders.stdout,
+        Logging.appenders.file('log/legendario.log')
 
     if ARGV.size == 0
-      puts 'Error no folder defined. Try legendario.rb "folder-name"  eng por  for example'
-      puts 'default languages are: eng por spa ger '
-      exit 0
+      @@logger.error 'A folder must be defined for watching'
+      puts ''
+      puts 'Please, try: '
+      puts ''
+      puts 'legendario "folder-name" eng por '
+      puts ''
+      puts 'for example.'
+      puts ''
+      puts 'Default languages are: eng por spa ger on this sequence of priority'
+      exit 1
     end
 
   	@dir = ARGV[0]
+    @@lang = ["eng", "por", "spa", "ger"]
 
   	def self.lang
       langs = ["eng", "por", "spa", "ger"]
@@ -28,10 +43,12 @@ module Legendario
           c+=1
         end
       end
-      puts "Will look for subtitles on these languages: "
-      puts langs.inspect
+      @@logger.info "Will look for subtitles on these languages: "
+      @@logger.info langs.inspect
       langs
+      @@lang = langs
   	end
+
 
   	def self.watch
   		Legendario.new.watch_dirs(@dir)
@@ -41,13 +58,13 @@ module Legendario
   			puts command
   			o = `#{command}`
   			r = $?.to_i
-  			puts "#{o} #{r}"
+  			@@logger.debug "#{o} #{r}"
   			r
   	end
 
   	def download_subs(file)
-  		lang().each do |l|
-  			puts "Language: #{l}"
+  		@@lang.each do |l|
+  			@@logger.info "Language: #{l}"
   			se("getsub -aLl #{l} \"#{file}\"")
   		end
   		symlink(File.dirname(file))
@@ -66,11 +83,11 @@ module Legendario
   					se("rm \"#{path}\"")
   				end
   				symlinked = false
-  				self.lang().each do |l|
+  				@@lang.each do |l|
   					if /\.#{l}\.srt$/i =~ File.basename(path) and !symlinked
-  						puts path
+  						@@logger.debug path
   						link = path.sub(/\.#{l}\.srt$/i, '.srt')
-  						puts link
+  						@@logger.debug link
   						symlinked =  true
   						se("ln -s \"#{path}\" \"#{link}\"")
   						break #this break is not working so using !symlinked
@@ -94,15 +111,15 @@ module Legendario
   				exec do |events|
   			    events.each do |ev|
   			      file = File.join(ev.watcher.path(), ev.name())
-  						puts file
+  						@@logger.info file
   						Legendario.new.download_subs(file)
   			    end
   			  end
   				#Avoids breaking after a directory been deleted
-  				rescue => error
-  					puts("#{error.class} and #{error.message}")
+  			rescue => error
+            @@logger.error error.inspect
   					Legendario.watch
-  			end
+  		  end
   		end
   	end
   end

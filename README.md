@@ -14,7 +14,7 @@ Install it yourself as:
 
 Please, try: 
 
-$ legendario "folder-name" eng por 
+    $ legendario "folder-name" eng por 
 
 for example.
 

@@ -1,28 +1,32 @@
-# Legendario
+ Legendario
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/legendario`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
-Add this line to your application's Gemfile:
 
-```ruby
-gem 'legendario'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install it yourself as:
 
     $ gem install legendario
 
 ## Usage
 
-TODO: Write usage instructions here
+
+Please, try: 
+
+legendario "folder-name" eng por 
+
+for example.
+
+Default languages are: eng por spa ger on this sequence of priority
+
+Edit your rc.local file to start legendario after boot
+
+su (your username) -lc "legendario (folder that will receive downloaded movies) (the languages code with 3 letters can be more tha one)"
+
+Example
+su evandro -lc "legendario /home/j/Downloads por spa"
+
+exit 0
 
 ## Development
 

@@ -1,0 +1,476 @@
+ INFO  log/legendario.log : Error no folder defined.\nPlease, try: 
+ INFO  log/legendario.log : Error no folder defined.\nPlease, try: 
+DEBUG  log/legendario.log : this debug message will  be output by the logger
+ INFO  log/legendario.log : just some friendly advice
+ERROR  log/legendario.log : Error, a folder must be defined for watching
+DEBUG  log/legendario.log : this debug message will  be output by the logger
+ INFO  log/legendario.log : just some friendly advice
+ERROR  log/legendario.log : Error, a folder must be defined for watching
+ERROR  log/legendario.log : Error, a folder must be defined for watching
+ERROR  log/legendario.log : Error, a folder must be defined for watching
+ERROR  log/legendario.log : Error, a folder must be defined for watching
+ERROR  log/legendario.log : Error, a folder must be defined for watching
+ERROR  log/legendario.log : A folder must be defined for watching
+ERROR  log/legendario.log : A folder must be defined for watching
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ERROR  log/legendario.log : A folder must be defined for watching
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ INFO  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .avi
+ERROR  log/legendario.log : NoMethodError and undefined method `lang' for #<Legendario::Legendario:0x9d2e78c>
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ INFO  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].avi
+ERROR  log/legendario.log : #<NoMethodError: undefined method `lang' for #<Legendario::Legendario:0x8e952c0>>
+ INFO  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .avi
+ERROR  log/legendario.log : #<NoMethodError: undefined method `lang' for #<Legendario::Legendario:0x8d4c60c>>
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ INFO  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].avi
+ERROR  log/legendario.log : #<NoMethodError: undefined method `lang' for #<Legendario::Legendario:0x9b51a90>>
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ INFO  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .avi
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ INFO  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]  .avi
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ INFO  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]   .avi
+ INFO  log/legendario.log : Language: eng
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]   
+
+Something crashed.
+Feel free to report the error here: https://github.com/byroot/ruby-osdb/issues
+With the following debug informations:
+
+Errno::ENOENT: No such file or directory @ rb_file_s_size - /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]   .avi:
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `size'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `compute_hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:29:in `hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/search/movie_hash.rb:12:in `search_subs_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:13:in `block in find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:62:in `block in run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:157:in `<top (required)>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `load'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `<main>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+
+ 0
+ INFO  log/legendario.log : Language: por
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]   
+
+Something crashed.
+Feel free to report the error here: https://github.com/byroot/ruby-osdb/issues
+With the following debug informations:
+
+Errno::ENOENT: No such file or directory @ rb_file_s_size - /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]   .avi:
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `size'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `compute_hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:29:in `hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/search/movie_hash.rb:12:in `search_subs_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:13:in `block in find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:62:in `block in run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:157:in `<top (required)>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `load'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `<main>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+
+ 0
+ INFO  log/legendario.log : Language: spa
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]   
+
+Something crashed.
+Feel free to report the error here: https://github.com/byroot/ruby-osdb/issues
+With the following debug informations:
+
+Errno::ENOENT: No such file or directory @ rb_file_s_size - /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]   .avi:
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `size'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `compute_hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:29:in `hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/search/movie_hash.rb:12:in `search_subs_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:13:in `block in find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:62:in `block in run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:157:in `<top (required)>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `load'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `<main>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+
+ 0
+ INFO  log/legendario.log : Language: ger
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]   
+
+Something crashed.
+Feel free to report the error here: https://github.com/byroot/ruby-osdb/issues
+With the following debug informations:
+
+Errno::ENOENT: No such file or directory @ rb_file_s_size - /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]   .avi:
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `size'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `compute_hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:29:in `hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/search/movie_hash.rb:12:in `search_subs_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:13:in `block in find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:62:in `block in run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:157:in `<top (required)>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `load'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `<main>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+
+ 0
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ INFO  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]  .avi
+ INFO  log/legendario.log : Language: eng
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]  
+
+Something crashed.
+Feel free to report the error here: https://github.com/byroot/ruby-osdb/issues
+With the following debug informations:
+
+Errno::ENOENT: No such file or directory @ rb_file_s_size - /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]  .avi:
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `size'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `compute_hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:29:in `hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/search/movie_hash.rb:12:in `search_subs_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:13:in `block in find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:62:in `block in run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:157:in `<top (required)>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `load'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `<main>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+
+ 0
+ INFO  log/legendario.log : Language: por
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]  
+
+Something crashed.
+Feel free to report the error here: https://github.com/byroot/ruby-osdb/issues
+With the following debug informations:
+
+Errno::ENOENT: No such file or directory @ rb_file_s_size - /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]  .avi:
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `size'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `compute_hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:29:in `hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/search/movie_hash.rb:12:in `search_subs_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:13:in `block in find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:62:in `block in run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:157:in `<top (required)>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `load'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `<main>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+
+ 0
+ INFO  log/legendario.log : Language: spa
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]  
+
+Something crashed.
+Feel free to report the error here: https://github.com/byroot/ruby-osdb/issues
+With the following debug informations:
+
+Errno::ENOENT: No such file or directory @ rb_file_s_size - /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]  .avi:
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `size'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `compute_hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:29:in `hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/search/movie_hash.rb:12:in `search_subs_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:13:in `block in find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:62:in `block in run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:157:in `<top (required)>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `load'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `<main>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+
+ 0
+ INFO  log/legendario.log : Language: ger
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]  
+
+Something crashed.
+Feel free to report the error here: https://github.com/byroot/ruby-osdb/issues
+With the following debug informations:
+
+Errno::ENOENT: No such file or directory @ rb_file_s_size - /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]  .avi:
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `size'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `compute_hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:29:in `hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/search/movie_hash.rb:12:in `search_subs_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:13:in `block in find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:62:in `block in run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:157:in `<top (required)>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `load'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `<main>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+
+ 0
+ INFO  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .avi
+ INFO  log/legendario.log : Language: eng
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] 
+* download http://dl.opensubtitles.org/en/download/filead/src-api/vrf-19e30c5f/sid-m1vpm6k258gegmtuj3mh3hs8l0/1954971828.gz to /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .eng.srt ... done
+
+ 0
+ INFO  log/legendario.log : Language: por
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] 
+* download http://dl.opensubtitles.org/en/download/filead/src-api/vrf-19da0c58/sid-oraaa328i5knos6d56hqs52lq2/1954971803.gz to /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .por.srt ... done
+
+ 0
+ INFO  log/legendario.log : Language: spa
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] 
+* download http://dl.opensubtitles.org/en/download/filead/src-api/vrf-19da0c59/sid-l6rbh9ckse5etn81rr5lp39k40/1954972524.gz to /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .spa.srt ... done
+
+ 0
+ INFO  log/legendario.log : Language: ger
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] 
+* No sub found
+
+ 0
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .eng.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  0
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .por.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .spa.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  256
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ INFO  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .avi
+ INFO  log/legendario.log : Language: eng
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] 
+* Sub already there. To override it use --force
+
+ 0
+ INFO  log/legendario.log : Language: por
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] 
+* Sub already there. To override it use --force
+
+ 0
+ INFO  log/legendario.log : Language: spa
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] 
+* Sub already there. To override it use --force
+
+ 0
+ INFO  log/legendario.log : Language: ger
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] 
+
+Something crashed.
+Feel free to report the error here: https://github.com/byroot/ruby-osdb/issues
+With the following debug informations:
+
+Errno::ENOENT: No such file or directory @ rb_file_s_size - /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .avi:
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `size'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `compute_hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:29:in `hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/search/movie_hash.rb:12:in `search_subs_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:13:in `block in find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:62:in `block in run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:157:in `<top (required)>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `load'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `<main>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+
+ 0
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .eng.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .por.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .spa.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log :  0
+ INFO  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].avi
+ INFO  log/legendario.log : Language: eng
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]
+* download http://dl.opensubtitles.org/en/download/filead/src-api/vrf-19e30c5f/sid-obtk6dqkbv3muohpkt175812j1/1954971828.gz to /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].eng.srt ... done
+
+ 0
+ INFO  log/legendario.log : Language: por
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]
+* download http://dl.opensubtitles.org/en/download/filead/src-api/vrf-19da0c58/sid-df90a9cd7ci71a7hn5jfcqcme1/1954971803.gz to /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].por.srt ... done
+
+ 0
+ INFO  log/legendario.log : Language: spa
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]
+* download http://dl.opensubtitles.org/en/download/filead/src-api/vrf-19da0c59/sid-g9uf4skphrig64h62175rio7j6/1954972524.gz to /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].spa.srt ... done
+
+ 0
+ INFO  log/legendario.log : Language: ger
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]
+* No sub found
+
+ 0
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .eng.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  0
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .por.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .spa.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].eng.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].srt
+DEBUG  log/legendario.log :  0
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].por.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].spa.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].srt
+DEBUG  log/legendario.log :  256
+ERROR  log/legendario.log : A folder must be defined for watching
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ INFO  log/legendario.log : Will look for subtitles on these languages: 
+ INFO  log/legendario.log : ["eng", "por", "spa", "ger"]
+ INFO  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].avi
+ INFO  log/legendario.log : Language: eng
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]
+* Sub already there. To override it use --force
+
+ 0
+ INFO  log/legendario.log : Language: por
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]
+* Sub already there. To override it use --force
+
+ 0
+ INFO  log/legendario.log : Language: spa
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]
+* Sub already there. To override it use --force
+
+ 0
+ INFO  log/legendario.log : Language: ger
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]
+
+Something crashed.
+Feel free to report the error here: https://github.com/byroot/ruby-osdb/issues
+With the following debug informations:
+
+Errno::ENOENT: No such file or directory @ rb_file_s_size - /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].avi:
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `size'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:44:in `compute_hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/movie_file.rb:29:in `hash'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/search/movie_hash.rb:12:in `search_subs_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:13:in `block in find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/lib/osdb/subtitle_finder.rb:12:in `find_sub_for'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:62:in `block in run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `each'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:53:in `run!'
+/home/j/.rvm/gems/ruby-2.2.2/gems/osdb-0.2.1/bin/getsub:157:in `<top (required)>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `load'
+/home/j/.rvm/gems/ruby-2.2.2/bin/getsub:23:in `<main>'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+/home/j/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'
+
+ 0
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .eng.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .por.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .spa.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log :  0
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].eng.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].por.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].spa.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log :  0
+ INFO  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .avi
+ INFO  log/legendario.log : Language: eng
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] 
+* Sub already there. To override it use --force
+
+ 0
+ INFO  log/legendario.log : Language: por
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] 
+* Sub already there. To override it use --force
+
+ 0
+ INFO  log/legendario.log : Language: spa
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] 
+* Sub already there. To override it use --force
+
+ 0
+ INFO  log/legendario.log : Language: ger
+DEBUG  log/legendario.log : * Search subtitles for Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] 
+* No sub found
+
+ 0
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .eng.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  0
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .por.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .spa.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv] .srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].eng.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].srt
+DEBUG  log/legendario.log :  0
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].por.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].srt
+DEBUG  log/legendario.log :  256
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].spa.srt
+DEBUG  log/legendario.log : /home/j/Downloads/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv]/Marvels.Jessica.Jones.S01E02.WEBRip.XviD-FUM[ettv].srt
+DEBUG  log/legendario.log :  256

@@ -2,25 +2,19 @@
 require "legendario/version"
 require 'file-monitor'
 require 'find'
-require 'logging'
+require_relative 'sl'
 
 module Legendario
 
   lib_dir = File.join File.dirname(__FILE__), '../lib'
   $:.unshift lib_dir unless $:.include? lib_dir
 
-
   class Legendario
-    @@logger = Logging.logger['legendario.log']
-    @@logger.level = :debug
-    @@logger.add_appenders \
-        Logging.appenders.stdout,
-        Logging.appenders.file('legendario.log')
 
     if ARGV.size == 0
-      @@logger.error 'A folder must be defined for watching'
+      Sl.error 'The folder that will be watched for new movies should be defined'
       puts ''
-      puts 'Please, try: '
+      puts 'Please, try something like: '
       puts ''
       puts 'legendario "folder-name" eng por '
       puts ''
@@ -43,12 +37,11 @@ module Legendario
           c+=1
         end
       end
-      @@logger.info "Will look for subtitles on these languages: "
-      @@logger.info langs.inspect
+      Sl.info "Will look for subtitles on these languages: "
+      Sl.info langs.inspect
       langs
       @@lang = langs
   	end
-
 
   	def self.watch
   		Legendario.new.watch_dirs(@dir)
@@ -58,13 +51,13 @@ module Legendario
   			puts command
   			o = `#{command}`
   			r = $?.to_i
-  			@@logger.debug "#{o} #{r}"
+  			Sl.debug "#{o} #{r}"
   			r
   	end
 
   	def download_subs(file)
   		@@lang.each do |l|
-  			@@logger.info "Language: #{l}"
+  			Sl.info "Language: #{l}"
   			se("getsub -aLl #{l} \"#{file}\"")
   		end
   		symlink(File.dirname(file))
@@ -85,9 +78,9 @@ module Legendario
   				symlinked = false
   				@@lang.each do |l|
   					if /\.#{l}\.srt$/i =~ File.basename(path) and !symlinked
-  						@@logger.debug path
+  						Sl.debug path
   						link = path.sub(/\.#{l}\.srt$/i, '.srt')
-  						@@logger.debug link
+  						Sl.debug link
   						symlinked =  true
   						se("ln -s \"#{path}\" \"#{link}\"")
   						break #this break is not working so using !symlinked
@@ -111,13 +104,13 @@ module Legendario
   				exec do |events|
   			    events.each do |ev|
   			      file = File.join(ev.watcher.path(), ev.name())
-  						@@logger.info file
+  						Sl.info file
   						Legendario.new.download_subs(file)
   			    end
   			  end
   				#Avoids breaking after a directory been deleted
   			rescue => error
-            @@logger.error error.inspect
+            Sl.error error.inspect
   					Legendario.watch
   		  end
   		end

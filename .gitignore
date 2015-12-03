@@ -7,5 +7,4 @@
 /pkg/
 /spec/reports/
 /tmp/
-.log
-/log/.log
+legendario.log

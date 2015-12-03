@@ -48,7 +48,6 @@ module Legendario
   	end
 
   	def se(command)
-  			puts command
   			o = `#{command}`
   			r = $?.to_i
   			Sl.debug "#{o} #{r}"

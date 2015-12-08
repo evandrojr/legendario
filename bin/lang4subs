@@ -1,82 +1,32 @@
 #!/usr/bin/env ruby
-require 'find'
-require_relative '../lib/sl'
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'language'
+require 'settings'
 
 if ARGV.size == 0
-	Sl.error 'The parent folder that will have the language changed'
-	puts ''
-	puts 'Please, try something like: '
-	puts ''
-	puts 'change_sub_lang "folder-name" eng por '
-	puts ''
-	puts 'for example.'
-	puts ''
-	puts 'Default languages are: eng por spa ger on this sequence of priority'
-	exit 1
+	Sl.error 'The parent folder that will have the language changed is mandatory'
+  puts ''
+  puts 'Please, try something like: '
+  puts ''
+  puts 'lang4subs "foldername" eng por '
+  puts ''
+  puts 'for example.'
+  puts ''
+  puts 'Default languages are: eng por spa ger on this sequence of priority'
+  exit 1
 end
 
-def se(command)
-		o = `#{command}`
-		r = $?.to_i
-		Sl.debug "#{o} #{r}"
-		r
+Settings.dir = ARGV[0]
+langs = ["eng", "por", "spa", "ger"]
+langs = [] if ARGV.size > 1
+c = 0
+ARGV.each do|lang|
+  langs << lang if c > 0
+  c+=1
 end
+Settings.langs = langs
+Sl.info "The first language found will be set as Language for the movie"
+Sl.info Settings.langs.join(" ")
 
-dir = ARGV[0]
-lang = ["eng", "por", "spa", "ger"]
-if ARGV.size > 1
-	lang = []
-	c = 0
-	ARGV.each do|l|
-		lang << l if c > 0
-		c+=1
-	end
-end
-
-Sl.info "Language priority:"
-Sl.info lang.inspect
-Sl.info "The first language found will be soft linked to the subtitle file"
-
-total_files = 0
-
-Find.find(dir) do |path|
-  puts "path: #{path}"
-  if FileTest.directory?(path)
-    if File.basename(path)[0] == ?.
-      Find.prune       # Don't look any further into this directory.
-    else
-      next
-    end
-  else
-		if FileTest.symlink?(path) and  /\.srt$/i =~ File.basename(path)
-			Sl.info "Deleting: #{path}"
-			File.delete(path)
-		end
-  end
-end
-
-Find.find(dir) do |path|
-	leave = false
-  if FileTest.directory?(path)
-    if File.basename(path)[0] == ?.
-      Find.prune       # Don't look any further into this directory.
-    else
-      next
-    end
-  else
-		lang.each do |l|
-			if /\.#{l}\.srt$/i =~ File.basename(path) and !FileTest.symlink?(path)
-				link = path.sub(/\.#{l}\.srt$/i, '.srt')
-				se "ln -s \"#{path}\" \"#{link}\""
-				Sl.info "Linking sub lang #{l} to #{link}"
-	    	total_files +=1
-				# leave = true
-				break
-	    end
-			# break if leave
-		end
-  end
-end
-
-
-Sl.info "Total of files linked: #{total_files}"
+Legendario::Language.new.set_lang

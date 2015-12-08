@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "bin"
-  spec.executables   = ["legendario", "crawl4subtitles", "subtitle_language_switch"]
+  spec.executables   = ["watch4subs", "crawl4subs", "lang4subs"]
   spec.require_paths = ["lib"]
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"

@@ -2,50 +2,12 @@
 require "legendario/version"
 require 'file-monitor'
 require 'find'
-require_relative 'sl'
+require 'sl'
+require 'settings'
 
 module Legendario
 
-  lib_dir = File.join File.dirname(__FILE__), '../lib'
-  $:.unshift lib_dir unless $:.include? lib_dir
-
-  class Legendario
-
-    if ARGV.size == 0
-      Sl.error 'The folder that will be watched for new movies should be defined'
-      puts ''
-      puts 'Please, try something like: '
-      puts ''
-      puts 'legendario "folder-name" eng por '
-      puts ''
-      puts 'for example.'
-      puts ''
-      puts 'Default languages are: eng por spa ger on this sequence of priority'
-      exit 1
-    end
-
-  	@dir = ARGV[0]
-    @@lang = ["eng", "por", "spa", "ger"]
-
-  	def self.lang
-      langs = ["eng", "por", "spa", "ger"]
-      if ARGV.size > 1
-        langs = []
-        c = 0
-        ARGV.each do|l|
-          langs << l if c > 0
-          c+=1
-        end
-      end
-      Sl.info "Will look for subtitles on these languages: "
-      Sl.info langs.inspect
-      langs
-      @@lang = langs
-  	end
-
-  	def self.watch
-  		Legendario.new.watch_dirs(@dir)
-  	end
+  class Watcher
 
   	def se(command)
   			o = `#{command}`
@@ -55,7 +17,7 @@ module Legendario
   	end
 
   	def download_subs(file)
-  		@@lang.each do |l|
+  		Settings.langs.each do |l|
   			Sl.info "Language: #{l}"
   			se("getsub -aLl #{l} \"#{file}\"")
   		end
@@ -75,7 +37,7 @@ module Legendario
   					se("rm \"#{path}\"")
   				end
   				symlinked = false
-  				@@lang.each do |l|
+  				Settings.langs.each do |l|
   					if /\.#{l}\.srt$/i =~ File.basename(path) and !symlinked
   						Sl.debug path
   						link = path.sub(/\.#{l}\.srt$/i, '.srt')
@@ -89,8 +51,8 @@ module Legendario
   		end
   	end
 
-  	def watch_dirs(dir)
-  		FileMonitor.watch dir do
+  	def watch_dirs
+  		FileMonitor.watch Settings.dir do
   		  dirs {
   		    disallow /\.git$/
   		  }
@@ -99,20 +61,15 @@ module Legendario
   		    disallow /.*/
   		    allow /\.mkv$|\.mp4$|\.avi$/
   		  }
-  			begin
   				exec do |events|
   			    events.each do |ev|
   			      file = File.join(ev.watcher.path(), ev.name())
   						Sl.info file
-  						Legendario.new.download_subs(file)
+  						Watcher.new.download_subs(file)
   			    end
   			  end
-  				#Avoids breaking after a directory been deleted
-  			rescue => error
-            Sl.error error.inspect
-  					Legendario.watch
-  		  end
   		end
   	end
+
   end
 end

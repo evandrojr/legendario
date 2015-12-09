@@ -42,7 +42,7 @@ Edit your rc.local file to start watch4subs after boot
     su (username) -lc "watch4subs folder-with-movies subs-langs"  
 
 Example
-`su evandro -lc "watch4subs /home/evandro/Downloads pob por spa"`
+`su evandro -lc "watch4subs ~/Downloads pob por spa"`
 
 
 ### Change the languages of the subtitles

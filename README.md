@@ -29,11 +29,11 @@ In case you are a polyglot you can pass as many languages as you like as paramet
 
 ### Download subtitles in English and Portuguese for all the movies  
 
-    $ crawl4subs "folder-with-movies" eng por
+    $ crawl4subs "folder-with-movies" pob eng por
 
 for example.
 
-Default languages are: eng por spa ger on this sequence of priority. [Sub language ISO 639-2](https://www.loc.gov/standards/iso639-2/php/code_list.php) code like fre or eng.
+Default languages are: eng por spa ger on this sequence of priority. [Sub language ISO 639-2](https://github.com/byroot/ruby-osdb/blob/master/lib/osdb/language.rb) code like pob (Brazilian Portuguese), fre or eng.
 
 ### Lay back and let watch4subs do all the work for you. As soon a new movie arrives it will download the subtitles for it.  
 
@@ -42,7 +42,7 @@ Edit your rc.local file to start watch4subs after boot
     su (username) -lc "watch4subs folder-with-movies subs-langs"  
 
 Example
-`su evandro -lc "watch4subs /home/evandro/Downloads por spa"`
+`su evandro -lc "watch4subs /home/evandro/Downloads pob por spa"`
 
 
 ### Change the languages of the subtitles

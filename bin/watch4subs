@@ -18,7 +18,7 @@ if ARGV.size == 0
 end
 
 Settings.dir = ARGV[0]
-langs = ["eng", "por", "spa", "ger"]
+langs = ["pob", "eng", "por", "spa", "ger"]
 langs = [] if ARGV.size > 1
 c = 0
 ARGV.each do|lang|

@@ -1,4 +1,4 @@
-# Legendario
+# Legendario RubyGem
 
 [![Gem Version](https://badge.fury.io/rb/legendario.svg)](https://badge.fury.io/rb/legendario)
 

@@ -6,6 +6,10 @@ When a movie finishes downloading `Legendario` will search and download its subt
 
 ## Installation
 
+I don't know the reason for it, but installing the gem using sudo it not working. So I recommend you install RVM or rbenv in advance and then install legendario with a non privileved user like yourself.
+
+https://rvm.io/rvm/install
+https://github.com/rbenv/rbenv
 
 Install it yourself as:
 

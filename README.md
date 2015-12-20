@@ -8,10 +8,11 @@ When a movie finishes downloading `Legendario` will search and download its subt
 
 I don't know the reason for it, but installing the gem using sudo it not working. So I recommend you install RVM or rbenv in advance and then install legendario with a non privileved user like yourself.
 
-https://rvm.io/rvm/install
-https://github.com/rbenv/rbenv
+see [RVM installtion](https://rvm.io/rvm/install)
 
-Install it yourself as:
+or [rbenv](https://github.com/rbenv/rbenv)
+
+Then install Legendario yourself as:
 
     $ gem install legendario
 
@@ -20,11 +21,14 @@ Install it yourself as:
 
 There are 3 tools at the moment:
 
-    crawl4subs: Will download the subtitles of the movies inside a parent folder recursively.
+    crawl4subs: Will download the subtitles of the movies
+    inside a parent folder recursively.
 
-    watch4subs: Watches a folder for new movies and downloads the subtitles as soon as the movie finishes downloading.
+    watch4subs: Watches a folder for new movies and downloads the subtitles as soon 
+    as the movie finishes downloading.
 
-    lang4subs: Change the default language of all the movies in a parent folder recursively.
+    lang4subs: Change the default language of
+    all the movies in a parent folder recursively.
 
 
 In case you are a polyglot you can pass as many languages as you like as parameters. The first language available for the movie will be set as the default language for the movie.

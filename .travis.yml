@@ -6,6 +6,6 @@ rvm:
   - 2.2.3
   - rbx
   - jruby
-  - ree
+#  - ree
 before_install: gem install bundler
 # before_install: gem install bundler -v 1.10.6

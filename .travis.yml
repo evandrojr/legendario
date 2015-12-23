@@ -8,4 +8,5 @@ rvm:
   - rbx
   - jruby
   - ree
+before_install: gem install bundler
 # before_install: gem install bundler -v 1.10.6

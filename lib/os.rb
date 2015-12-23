@@ -1,3 +1,5 @@
+require 'fileutils'
+
 class Os
 
   class << self

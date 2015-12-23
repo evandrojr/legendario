@@ -10,6 +10,7 @@ GEM
       little-plugger (~> 1.1)
       multi_json (~> 1.10)
     multi_json (1.11.2)
+    rake (10.4.2)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
 
@@ -20,6 +21,7 @@ DEPENDENCIES
   awesome_print (~> 1.6)
   file-monitor (~> 0.1)
   logging (~> 2.0)
+  rake
 
 BUNDLED WITH
    1.10.6

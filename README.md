@@ -1,3 +1,10 @@
+# [Project moved to: https://github.com/evandrojr/layback](https://github.com/evandrojr/layback)
+
+# Please use that one.
+
+<p>If you like this, why not buy me a beer: <a rel="nofollow" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=evandrojr%40gmail%2ecom&lc=US&item_name=evandro%2eorg&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate"></a><br>
+<br></p>
+
 # Legendario RubyGem
 
 [![Build Status](https://secure.travis-ci.org/evandrojr/legendario.png)](http://travis-ci.org/evandrojr/legendario)

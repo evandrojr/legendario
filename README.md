@@ -10,7 +10,7 @@
 [![Build Status](https://secure.travis-ci.org/evandrojr/legendario.png)](http://travis-ci.org/evandrojr/legendario)
 [![Gem Version](https://badge.fury.io/rb/legendario.svg)](https://badge.fury.io/rb/legendario)
 
-When a movie finishes downloading `Legendario` will search and download its subtitles automatically.
+When a movie is downloades `Legendario` will search and download its subtitles automatically.
 
 ## Installation
 
